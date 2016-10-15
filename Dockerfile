@@ -5,7 +5,7 @@ FROM sphereio/predictionio
 EXPOSE 8000
 
 # Get Template
-RUN pio template get apache/incubator-predictionio-template-recommender MyRecommendation -y
+RUN pio template get apache/incubator-predictionio-template-recommender MyRecommendation --name bfast --package br.com.bfast --email contato@bfast.com.br
 
 # Start PIO
 RUN pio-start-all
