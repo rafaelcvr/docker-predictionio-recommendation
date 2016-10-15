@@ -1,9 +1,11 @@
 # Docker Container with PredictionIO and Recommendation App
 
-Build:
+This container as based on sphereio/predicitonio container: https://hub.docker.com/r/sphereio/predictionio/
 
-./scripts/build_container.sh
+## Build:
 
-Run:
+    $ ./scripts/build_container.sh
 
-./scripts/run_container.sh
+## Run:
+
+    $ ./scripts/run_container.sh
