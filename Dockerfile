@@ -5,7 +5,7 @@ FROM sphereio/predictionio
 EXPOSE 8000
 
 # Get Template
-RUN pio template get apache/incubator-predictionio-template-recommender MyRecommendation
+RUN pio template get apache/incubator-predictionio-template-recommender MyRecommendation -y
 
 # Start PIO
 RUN pio-start-all
