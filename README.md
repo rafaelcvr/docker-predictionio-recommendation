@@ -1,2 +1,9 @@
-# docker-predictionio-recommendation
-Docker Container with PredictionIO and Recommendation App
+# Docker Container with PredictionIO and Recommendation App
+
+Build:
+
+./scripts/build_container.sh
+
+Run:
+
+./scripts/run_container.sh
