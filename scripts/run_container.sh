@@ -1,1 +1,1 @@
-docker run -it -p 8000:8000 docker-recommendation
+docker run -td -p 8000:8000 docker-recommendation
