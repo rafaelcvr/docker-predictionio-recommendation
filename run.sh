@@ -14,4 +14,4 @@ pio app new MyApp
 
 pio app list
 
-tail -f /var/log/dmesg
+tail -f /PredictionIO-0.9.6/vendors/hbase-1.0.0/logs/hbase--master-recommendation-products-1.out
