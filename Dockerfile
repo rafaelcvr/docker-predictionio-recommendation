@@ -4,6 +4,6 @@ FROM sphereio/predictionio:latest
 # expose 8000
 EXPOSE 8000
 
-ADD run.sh /run.sh
+ADD files/run.sh /run.sh
 
 ENTRYPOINT /run.sh
