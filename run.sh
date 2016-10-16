@@ -13,3 +13,5 @@ cd /MyRecommendation
 pio app new MyApp
 
 pio app list
+
+tail -f /var/log/dmesg
