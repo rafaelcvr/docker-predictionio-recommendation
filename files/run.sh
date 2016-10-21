@@ -7,7 +7,10 @@ yes n | pio template get apache/incubator-predictionio-template-recommender MyRe
 
 # Start App
 cd /MyRecommendation
+
 pio app new ProductRecommendation
+
+sed -i.bak s/INVALID_APP_NAME/ProductRecommendation/g engine.json
 
 pio app list
 
@@ -16,5 +19,7 @@ pio build --verbose
 pio train
 
 pio deploy
+
+pio app list
 
 while true; do sleep 1; done
