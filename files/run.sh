@@ -3,10 +3,10 @@ pio-start-all
 pio status
 
 # Get Template
-yes n | pio template get apache/incubator-predictionio-template-recommender MyRecommendation --name bfast --package br.com.bfast --email contato@bfast.com.br
+yes n | pio template get apache/incubator-predictionio-template-ecom-recommender MyECommerceRecommendation --name bfast --package br.com.bfast --email contato@bfast.com.br
 
 # Start App
-cd /MyRecommendation
+cd /MyECommerceRecommendation
 
 pio app new ProductRecommendation
 
