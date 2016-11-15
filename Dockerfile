@@ -15,7 +15,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -O https://d8k1yxp8elc6b.cloudfront.net/PredictionIO-${PIO_VERSION}.tar.gz \
+RUN curl -O http://ftp.unicamp.br/pub/apache/incubator/predictionio/${PIO_VERSION}-incubating/apache-predictionio-${PIO_VERSION}-incubating.tar.gz \
     && tar -xvzf PredictionIO-${PIO_VERSION}.tar.gz -C / && mkdir -p ${PIO_HOME}/vendors \
     && rm PredictionIO-${PIO_VERSION}.tar.gz
 COPY files/pio-env.sh ${PIO_HOME}/conf/pio-env.sh
