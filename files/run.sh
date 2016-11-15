@@ -14,4 +14,4 @@ sed -i.bak s/INVALID_APP_NAME/ProductRecommendation/g engine.json
 
 pio app list
 
-while true; do sleep 1; done
+tail -f /pio.log
