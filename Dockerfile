@@ -20,8 +20,9 @@ RUN curl -O http://ftp.unicamp.br/pub/apache/incubator/predictionio/${PIO_VERSIO
     && cd apache-predictionio-${PIO_VERSION}-incubating \
     && ./make-distribution.sh \
     && mv PredictionIO-${PIO_VERSION}-incubating.tar.gz ../PredictionIO-${PIO_VERSION}-incubating.tar.gz \
-    && cd ..
-    && rm -rf apache-predictionio-${PIO_VERSION}-incubating
+    && cd .. \
+    && rm -rf apache-predictionio-${PIO_VERSION}-incubating \
+    && rm apache-predictionio-${PIO_VERSION}-incubating.tar.gz
 
 RUN tar -xvzf PredictionIO-${PIO_VERSION}-incubating.tar.gz -C / && mkdir -p ${PIO_HOME}/vendors \
     && rm PredictionIO-${PIO_VERSION}-incubating.tar.gz
