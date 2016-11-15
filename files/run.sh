@@ -12,6 +12,8 @@ pio app new ProductRecommendation
 
 sed -i.bak s/INVALID_APP_NAME/ProductRecommendation/g engine.json
 
+sed -i.bak s/20/10/g engine.json
+
 pio app list
 
 tail -f ./pio.log
