@@ -14,6 +14,8 @@ sed -i.bak s/INVALID_APP_NAME/ProductRecommendation/g engine.json
 
 sed -i.bak s/20/15/g engine.json
 
+sed -i.bak s/200/400/g ./src/main/scala/ECommAlgorithm.scala
+
 pio app list
 
 tail -f ./pio.log
